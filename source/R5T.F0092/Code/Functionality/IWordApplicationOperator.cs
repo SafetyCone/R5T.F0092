@@ -22,7 +22,7 @@ namespace R5T.F0092
 
         public void Open(string filePath)
         {
-            var enquotedFilePath = Instances.StringOperator.EnsureEnquoted(filePath);
+            var enquotedFilePath = Instances.StringOperator.Ensure_Enquoted(filePath);
 
             Instances.CommandLineOperator.Run_Synchronous_NoWait(
                 ExecutableFilePaths.Instance.Word,
